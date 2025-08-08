@@ -9,58 +9,75 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-  "tabs": [
-    {
-      "tab": "Documentation",
-      "groups": [],
-      "pages": [
-        "index",
-        "quickstart",
-        "serversetup"
-      ]
-    },
-    {
-      "tab": "Server Configuration",
-      "groups": [
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Landing",
+            "pages": [
+              "landing/index",
+              "landing/quickstart"
+            ]
+          },
+          {
+            "group": "Server Configuration",
+            "pages": [
+              "configuration/alias",
+              "configuration/h"
+            ]
+          },
+          {
+            "group": "AI tools",
+            "pages": [
+              "ai-tools/cursor",
+              "ai-tools/claude-code",
+              "ai-tools/windsurf"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API reference",
+        "groups": [
+          {
+            "group": "API documentation",
+            "pages": [
+              "api-reference/introduction"
+            ]
+          },
+          {
+            "group": "Endpoint examples",
+            "pages": [
+              "api-reference/endpoint/get",
+              "api-reference/endpoint/create",
+              "api-reference/endpoint/delete",
+              "api-reference/endpoint/webhook"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
         {
-          "group": "Server Configuration",
-          "pages": [
-            "alias",
-            "logging",
-            "backup",
-            "autorole",
-            "levelsetup",
-            "jailsetup"
-          ]
-        }
-      ]
-    },
-    {
-      "tab": "Moderation",
-      "groups": [
+          "anchor": "Documentation",
+          "href": "https://mintlify.com/docs",
+          "icon": "book-open-cover"
+        },
         {
-          "group": "Moderation",
-          "pages": [
-            "cases"
-          ]
-        }
-      ]
-    },
-    {
-      "tab": "Security",
-      "groups": [
+          "anchor": "Community",
+          "href": "https://mintlify.com/community",
+          "icon": "slack"
+        },
         {
-          "group": "Security Setup",
-          "pages": [
-            "filter",
-            "joingate"
-          ]
+          "anchor": "Blog",
+          "href": "https://mintlify.com/blog",
+          "icon": "newspaper"
         }
       ]
     }
-  ]
-},
-
+  },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
@@ -80,15 +97,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
