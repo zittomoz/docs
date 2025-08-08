@@ -9,49 +9,58 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
+  "tabs": [
+    {
+      "tab": "Documentation",
+      "groups": [],
+      "pages": [
+        "introduction",
+        "quickstart",
+        "serversetup"
+      ]
+    },
+    {
+      "tab": "Server Configuration",
+      "groups": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
+          "group": "Server Configuration",
+          "pages": [
+            "alias",
+            "logging",
+            "backup",
+            "autorole",
+            "levelsetup",
+            "jailsetup"
+          ]
+        }
+      ]
+    },
+    {
+      "tab": "Moderation",
+      "groups": [
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
+          "group": "Moderation",
+          "pages": [
+            "cases"
+          ]
+        }
+      ]
+    },
+    {
+      "tab": "Security",
+      "groups": [
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "group": "Security Setup",
+          "pages": [
+            "filter",
+            "joingate"
+          ]
         }
       ]
     }
-  },
+  ]
+},
+
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
